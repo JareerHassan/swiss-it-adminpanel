@@ -228,13 +228,14 @@ export default function BlogEditorPage() {
 
   return (
     <ProtectedRoute>
-      <div className="max-w-4xl mx-auto my-10 p-6 rounded-2xl shadow-md bg-white">
+      <div className="max-w-4xl mx-auto my-10 p-6 rounded-2xl shadow-md bg-gray-100 text-black">
         <h1 className="text-2xl font-bold mb-6 "> Create Blog</h1>
 
           {/* Title Input */}
           <input
             type="text"
             placeholder="Enter blog title"
+              style={{ '::placeholder': { color: 'black' } }}
             value={title}
             onChange={(e) => setTitle(e.target.value)}
             onBlur={() => {
@@ -249,6 +250,7 @@ export default function BlogEditorPage() {
           <input
             type="text"
             placeholder="Slug (seo-friendly-url)"
+               style={{ '::placeholder': { color: 'black' } }}
             value={slug}
             onChange={(e) => setSlug(e.target.value)}
             className="w-full p-3 mb-4 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-400 outline-none"
@@ -258,6 +260,7 @@ export default function BlogEditorPage() {
           <input
             type="text"
             placeholder="Category"
+               style={{ '::placeholder': { color: 'black' } }}
             value={category}
             onChange={(e) => setCategory(e.target.value)}
             className="w-full p-3 mb-4 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-400 outline-none"
@@ -267,6 +270,7 @@ export default function BlogEditorPage() {
           <input
             type="text"
             placeholder="Enter tags (comma separated: tech, coding, news)"
+               style={{ '::placeholder': { color: 'black' } }}
             value={tags}
             onChange={(e) => setTags(e.target.value)}
             className="w-full p-3 mb-4 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-400 outline-none"
