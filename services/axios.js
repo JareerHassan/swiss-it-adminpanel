@@ -2,7 +2,7 @@ import axios from 'axios';
 
 const api = axios.create({
     // baseURL:  'https://marketplacebackend.oxmite.com/api',
-    baseURL:  'http://backend.highlandgroup.ch/api',
+    baseURL:  'https://backend.highlandgroup.ch/api',
     // baseURL:  'http://192.168.43.208:5000/api',
 
     
